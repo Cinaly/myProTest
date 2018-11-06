@@ -30,10 +30,12 @@
 
 <script>
     import sonSlot from './sonSlot';
+    import {mixinTest1} from './mixinTest1';
 
     export default {
         name: 'slotTest',
         components: {sonSlot},
+        mixins: [mixinTest1],
         data:function () {
           return {
               items: [
