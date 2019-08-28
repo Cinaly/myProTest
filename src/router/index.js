@@ -14,8 +14,6 @@ const P_404 = r => require.ensure([], () => r(require('@/components/404/404.vue'
 // 自动加载子路由
 const siteSonRouterList = utils.loadSonRouters(require.context('@/components/', false, /vue$/))
 
-console.log('siteSonRouterList', siteSonRouterList);
-
 const myRoutes = [];
 siteSonRouterList.forEach((v, index) => {
     var obj = {
@@ -30,6 +28,8 @@ myRoutes.push({
     path: '*',
     component: P_404
 });
+
+console.log(myRoutes);
 
 export default new Router({
     routes: myRoutes

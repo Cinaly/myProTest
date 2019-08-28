@@ -6,7 +6,6 @@ import Vuex from 'vuex'
 import router from './router'
 import vuexI18n from 'vuex-i18n'
 
-
 import utils from './common/utils'
 
 Vue.prototype.$utils=utils;
@@ -23,10 +22,9 @@ Vue.i18n.add('en',require('./assets/json/i18n/en.json'));
 Vue.i18n.add('tr',require('./assets/json/i18n/tr.json'));
 Vue.i18n.add('tw',require('./assets/json/i18n/tw.json'));
 
-
-
 Vue.i18n.set('tw');
 /* eslint-disable no-new */
+
 new Vue({
   store,
   el: '#app',
